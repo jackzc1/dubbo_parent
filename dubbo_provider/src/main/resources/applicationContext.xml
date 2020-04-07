@@ -12,9 +12,11 @@
     <dubbo:registry address="multicast://224.5.6.7:1234"></dubbo:registry>
 
     <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
-    
-    <dubbo:service interface="com.soft.service.UserService" ref="userService"></dubbo:service>
+    <!--使用注解的方式-->
+    <!--<dubbo:service interface="com.soft.service.UserService" ref="userService"></dubbo:service>
 
-    <bean id="userService" class="com.soft.service.UserServiceImpl"/>
+    <bean id="userService" class="com.soft.service.UserServiceImpl"/>-->
+
+    <dubbo:annotation package="com.soft.service"></dubbo:annotation>
 
 </beans>

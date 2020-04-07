@@ -1,5 +1,6 @@
 package com.soft.test;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.soft.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +13,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class Test1 {
 
-    @Autowired
+    /*@Autowired*/
+    //使用注解的方式
+    @Reference
     private UserService userService;
 
     @Test

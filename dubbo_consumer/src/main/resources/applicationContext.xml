@@ -11,6 +11,7 @@
 
     <dubbo:registry address="multicast://224.5.6.7:1234"></dubbo:registry>
 
-    <dubbo:reference interface="com.soft.service.UserService" id="userService"></dubbo:reference>
-
+    <!--<dubbo:reference interface="com.soft.service.UserService" id="userService"></dubbo:reference>
+-->
+    <dubbo:annotation package="com.soft.service"></dubbo:annotation>
 </beans>
